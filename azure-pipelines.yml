@@ -1,0 +1,32 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+resources:
+  repositories:
+    - repository: githubRepo
+      type: github
+      name: mikkelh-SDU/Templates
+      endpoint: github.com_mikkelh-SDU
+
+steps:
+- checkout: self
+
+- checkout: githubRepo
+
+- script: |
+    git config --global user.name "Your Name"
+    git config --global user.email "your-email@example.com"
+    cp $(Build.SourcesDirectory)/myfile.json $(Build.SourcesDirectory)/githubRepo
+    cd $(Build.SourcesDirectory)/githubRepo
+    git add myfile.json
+    git commit -m "Add myfile.json"
+    git push origin main
+  displayName: 'Commit and Push to GitHub'
