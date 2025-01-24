@@ -1,0 +1,11 @@
+[
+  {
+    "name": "SDU WebAPI",
+    "description": "WebAPI",
+    "repositoryPath": "https://dev.azure.com/SduLandingZones/Templates/_git/Template-WebApi",
+    "tags": [
+      "bicep",
+      "C#"
+    ]
+  }
+]
