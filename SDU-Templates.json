@@ -5,6 +5,17 @@
     "repositoryPath": "https://dev.azure.com/SduLandingZones/Templates/_git/Template-WebApi",
     "tags": [
       "bicep",
+      "webapi",
+      "C#"
+    ]
+  },
+  {
+    "name": "SDU FunctionApp",
+    "description": "FunctionApp",
+    "repositoryPath": "https://dev.azure.com/SduLandingZones/Templates/_git/Template-FunctionApp",
+    "tags": [
+      "bicep",
+      "functionApp",
       "C#"
     ]
   }
