@@ -18,5 +18,15 @@
       "functionApp",
       "C#"
     ]
+  },
+  {
+    "name": "SDU FunctionApp11111111",
+    "description": "FunctionApp11111111",
+    "repositoryPath": "https://dev.azure.com/SduLandingZones/Templates/_git/Template-FunctionApp",
+    "tags": [
+      "bicep",
+      "functionApp",
+      "C#"
+    ]
   }
 ]
